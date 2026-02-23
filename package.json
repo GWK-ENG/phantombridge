@@ -1,0 +1,27 @@
+{
+  "name": "phantombridge",
+  "version": "0.1.0",
+  "description": "AI Agent 浏览器底层控制网关 - 专为 AI 和自动化 CLI 打造的浏览器运行时环境",
+  "main": "gateway/index.js",
+  "scripts": {
+    "start": "node gateway/index.js",
+    "install-host": "node install-host.js",
+    "test:protocol": "node test/test-native-protocol.js",
+    "test:tools": "node test/test-extract-tool-calls.js",
+    "test": "node test/test-native-protocol.js && node test/test-extract-tool-calls.js"
+  },
+  "keywords": [
+    "browser-automation",
+    "mcp",
+    "chrome-extension",
+    "native-messaging",
+    "cdp",
+    "rpa"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "uuid": "^11.0.0",
+    "ws": "^8.18.0"
+  }
+}
